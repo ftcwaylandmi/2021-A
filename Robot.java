@@ -4,7 +4,8 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-public class Robot {
+public class
+Robot {
     private final double InchesPerSecond = .11;
     private final double DegreesPerSecond = .24;
     private int Armstart = 0;
@@ -58,17 +59,13 @@ public class Robot {
     }
 
     public void RightDrive(double p) {
-        myself.leftFrontDrive.setPower(p);
-        myself.rightFrontDrive.setPower(0);
-        myself.leftBackDrive.setPower(p);
-        myself.rightBackDrive.setPower(0);
+        myself.rightFrontDrive.setPower(p);
+        myself.rightBackDrive.setPower(p);
     }
 
     public void LeftDrive(double p) {
-        myself.leftFrontDrive.setPower(0);
-        myself.rightFrontDrive.setPower(p);
-        myself.leftBackDrive.setPower(0);
-        myself.rightBackDrive.setPower(p);
+        myself.leftFrontDrive.setPower(p);
+        myself.leftBackDrive.setPower(p);
     }
 
     public void wait(int sleeptime) {

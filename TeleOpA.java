@@ -44,11 +44,11 @@ public class TeleOpA extends OpMode{
         }
 
         if(gamepad1.right_bumper) {
-            myrobot.LeftDrive(left/2);
-            myrobot.RightDrive(right/2);
+            myrobot.LeftDrive(left*0.5);
+            myrobot.RightDrive(right*0.5);
         } else {
-            myrobot.LeftDrive(right);
-            myrobot.RightDrive(left);
+            myrobot.LeftDrive(left);
+            myrobot.RightDrive(right);
 
         }
 
